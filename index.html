@@ -1,106 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barber Shop</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Navbar -->
     <header>
-        <nav class="navbar">
-            <div class="logo">Barbar<span>Shop</span></div>
+      <nav class="navbar">
+        <div class="logo">Barbar<span>Salon</span></div>
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
 
-            <div class="hamburger" id="hamburger">
-                ☰
-            </div>
-        </nav>
+        <div class="hamburger" id="hamburger">☰</div>
+      </nav>
     </header>
 
     <script>
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('navLinks');
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("navLinks");
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
     </script>
     <!-- Banner / Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to Barber<span>Shop</span></h1>
-            <p>Sharp Cuts • Smooth Shaves • Classic Style</p>
-            <a href="#services" class="btn">Explore Services</a>
-        </div>
+      <div class="hero-content">
+        <h1>Welcome to Barber<span>Shop</span></h1>
+        <p>Sharp Cuts • Smooth Shaves • Classic Style</p>
+        <a href="#services" class="btn">Explore Services</a>
+      </div>
     </section>
     <!-- About Us Section -->
 
     <section class="about" id="about">
-        <div class="about-container">
-            <div class="about-img">
-                <img src="/imgs/about.avif" alt="Barber Shop">
-            </div>
-            <div class="about-text">
-                <h2>About <span>Us</span></h2>
-                <p>
-                    At <strong>BarberShop</strong>, we believe grooming is more than just a haircut—it's an experience.
-                    With skilled barbers, premium products, and a comfortable atmosphere, we ensure every visit
-                    leaves you looking sharp and feeling confident.
-                </p>
-                <p>
-                    Whether you need a classic cut, modern fade, or a smooth shave, we blend tradition with
-                    style to give you the perfect look.
-                </p>
-                <a href="#contact" class="btn">Book an Appointment</a>
-            </div>
+      <div class="about-container">
+        <div class="about-img">
+          <img src="/imgs/about.avif" alt="Barber Shop" />
         </div>
+        <div class="about-text">
+          <h2>About <span>Us</span></h2>
+          <p>
+            At <strong>BarberShop</strong>, we believe grooming is more than
+            just a haircut—it's an experience. With skilled barbers, premium
+            products, and a comfortable atmosphere, we ensure every visit leaves
+            you looking sharp and feeling confident.
+          </p>
+          <p>
+            Whether you need a classic cut, modern fade, or a smooth shave, we
+            blend tradition with style to give you the perfect look.
+          </p>
+          <a href="#contact" class="btn">Book an Appointment</a>
+        </div>
+      </div>
     </section>
 
     <!-- Services Section -->
     <section class="services" id="services">
-        <div class="services-container">
-            <h2>Our <span>Services</span></h2>
-            <p class="services-intro">
-                We provide a range of professional grooming services to keep you looking sharp.
+      <div class="services-container">
+        <h2>Our <span>Services</span></h2>
+        <p class="services-intro">
+          We provide a range of professional grooming services to keep you
+          looking sharp.
+        </p>
+
+        <div class="service-cards">
+          <div class="card">
+            <img src="/imgs/about.avif" alt="Haircut" />
+            <h3>Classic Haircut</h3>
+            <p>
+              A timeless cut tailored to your style for a sharp, confident look.
             </p>
+          </div>
 
-            <div class="service-cards">
-                <div class="card">
-                    <img src="/imgs/about.avif" alt="Haircut">
-                    <h3>Classic Haircut</h3>
-                    <p>A timeless cut tailored to your style for a sharp, confident look.</p>
-                </div>
+          <div class="card">
+            <img src="/imgs/about.avif" alt="Shave" />
+            <h3>Premium Shave</h3>
+            <p>
+              Hot towel treatment and precision razor shave for ultimate
+              freshness.
+            </p>
+          </div>
 
-                <div class="card">
-                    <img src="/imgs/about.avif" alt="Shave">
-                    <h3>Premium Shave</h3>
-                    <p>Hot towel treatment and precision razor shave for ultimate freshness.</p>
-                </div>
+          <div class="card">
+            <img src="/imgs/about.avif" alt="Beard Trim" />
+            <h3>Beard Trim</h3>
+            <p>Shape, style, and detail your beard with expert precision.</p>
+          </div>
 
-                <div class="card">
-                    <img src="/imgs/about.avif" alt="Beard Trim">
-                    <h3>Beard Trim</h3>
-                    <p>Shape, style, and detail your beard with expert precision.</p>
-                </div>
-
-                <div class="card">
-                    <img src="/imgs/about.avif" alt="Styling">
-                    <h3>Hair Styling</h3>
-                    <p>Modern styles and professional products for the perfect finish.</p>
-                </div>
-            </div>
+          <div class="card">
+            <img src="/imgs/about.avif" alt="Styling" />
+            <h3>Hair Styling</h3>
+            <p>
+              Modern styles and professional products for the perfect finish.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Orbit Animation Section -->
     <!-- <section class="orbit-section">
@@ -119,96 +125,95 @@
     </section> -->
     <!-- Products Section -->
     <section id="products" class="products">
-        <h2>Our Products</h2>
-        <div class="product-container">
-            <!-- Product 1 -->
-            <div class="product-card">
-                <img src="/imgs/product1.jpg" alt="Product 1">
-                <h3>Luxury Sofa</h3>
-                <p>High quality fabric with premium comfort.</p>
-                <button>View Details</button>
-            </div>
-
-            <!-- Product 2 -->
-            <div class="product-card">
-                <img src="/imgs/product2.jpg" alt="Product 2">
-                <h3>Dining Table</h3>
-                <p>Elegant design for modern dining rooms.</p>
-                <button>View Details</button>
-            </div>
-
-            <!-- Product 3 -->
-            <div class="product-card">
-                <img src="/imgs/product3.jpg" alt="Product 3">
-                <h3>Office Chair</h3>
-                <p>Ergonomic design for maximum comfort.</p>
-                <button>View Details</button>
-            </div>
+      <h2>Our Products</h2>
+      <div class="product-container">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <img src="/imgs/product1.jpg" alt="Product 1" />
+          <h3>Luxury Sofa</h3>
+          <p>High quality fabric with premium comfort.</p>
+          <button>View Details</button>
         </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <img src="/imgs/product2.jpg" alt="Product 2" />
+          <h3>Dining Table</h3>
+          <p>Elegant design for modern dining rooms.</p>
+          <button>View Details</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <img src="/imgs/product3.jpg" alt="Product 3" />
+          <h3>Office Chair</h3>
+          <p>Ergonomic design for maximum comfort.</p>
+          <button>View Details</button>
+        </div>
+      </div>
     </section>
     <!-- Contact Us Section -->
     <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <div class="contact-container">
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <h3>Get in Touch</h3>
-                <p><strong>Address:</strong> Dubai Furnitures, Burj Dubai</p>
-                <p><strong>Phone:</strong> +971 55 123 4567</p>
-                <p><strong>Email:</strong> info@dubaifurnitures.com</p>
-            </div>
-
-            <!-- Contact Form -->
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+      <h2>Contact Us</h2>
+      <div class="contact-container">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p><strong>Address:</strong> Dubai Furnitures, Burj Dubai</p>
+          <p><strong>Phone:</strong> +971 55 123 4567</p>
+          <p><strong>Email:</strong> info@dubaifurnitures.com</p>
         </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <!-- Quick Links -->
-            <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-
-            <!-- Contact Info -->
-            <div class="footer-contact">
-                <h3>Contact</h3>
-                <p>📍 Burj Dubai, UAE</p>
-                <p>📞 +971 55 123 4567</p>
-                <p>📧 info@dubaifurnitures.com</p>
-            </div>
-
-            <!-- Social Links -->
-            <div class="footer-social">
-                <h3>Follow Us</h3>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
+      <div class="footer-container">
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
 
-        <!-- Footnote -->
-        <div class="footnote">
-            <p>© 2025 Dubai Furnitures | Designed by <span>Fatir Dev Studio</span></p>
+        <!-- Contact Info -->
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p>📍 Burj Dubai, UAE</p>
+          <p>📞 +971 55 123 4567</p>
+          <p>📧 info@dubaifurnitures.com</p>
         </div>
+
+        <!-- Social Links -->
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footnote -->
+      <div class="footnote">
+        <p>
+          © 2025 Dubai Furnitures | Designed by <span>Fatir Dev Studio</span>
+        </p>
+      </div>
     </footer>
-
-
-</body>
-
+  </body>
 </html>
